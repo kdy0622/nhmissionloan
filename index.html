@@ -10,27 +10,29 @@
     <style>
         body {
             font-family: 'Noto Sans KR', sans-serif;
-            background-color: #FAF9F6; /* Ivory Background */
+            background-color: #FAF9F6;
+            margin: 0;
+            padding: 0;
         }
-        .text-large { font-size: 1.125rem; } /* 18px base */
-        .text-xlarge { font-size: 1.5rem; }  /* 24px */
-        .text-header { font-size: 2.25rem; } /* 36px */
-        .forest-green { color: #228B22; }
-        .bg-forest-green { background-color: #228B22; }
-        .border-forest-green { border-color: #228B22; }
+        #root {
+            min-height: 100vh;
+        }
     </style>
-<script type="importmap">
+    <script type="importmap">
 {
   "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "uuid": "https://esm.sh/uuid@^13.0.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "uuid": "https://esm.sh/uuid@11.0.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
   }
 }
 </script>
 </head>
 <body>
     <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
